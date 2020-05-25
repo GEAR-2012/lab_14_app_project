@@ -88,7 +88,7 @@ function initMap(c) {
     console.log(c);
     map = new google.maps.Map(document.querySelector("#map"), {
       center: c,
-      zoom: 8,
+      zoom: 15,
     });
     marker = new google.maps.Marker({ position: c, map: map });
   }
