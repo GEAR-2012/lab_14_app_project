@@ -19,8 +19,8 @@ async function getData() {
   const pos = { lat: data.coords.latitude, lng: data.coords.longitude };
 
   $("#geo").html(`
-  <p>Latitude: <span>${pos.lat.toFixed(3)}</span> °</p><br />
-  <p>Longitude: <span>${pos.lng.toFixed(3)}</span> °</p>
+  <p>Latitude: <span>${pos.lat}</span> °</p><br />
+  <p>Longitude: <span>${pos.lng}</span> °</p>
   `);
 }
 
