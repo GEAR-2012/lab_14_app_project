@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 80%;
+  height: calc(100vh - 60px);
+  margin: 0 auto;
+  padding: 30px 50px;
+  background-color: rgba(70, 100, 140, 0.2);
+  color: rgb(27, 57, 99);
+  /*  */
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 30px;
+  align-content: stretch;
+}
+
+#map {
+  background-color: rgba(41, 128, 0, 0.527);
+}
+
+span {
+  font-weight: bold;
+}
