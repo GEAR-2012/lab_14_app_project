@@ -1,13 +1,8 @@
 /*
-variables
-*/
 
-const googleMapApiKey = `AIzaSyC-4bLBDeyCrDPZYRYyxOoxSG0elswC-Gs`;
-const googleMapApiUrl = `https://maps.googleapis.com/maps/api/js?key=${googleMapApiKey}&callabck=initMap`;
-/*
+
 Geolocation
 */
-
 if (navigator.geolocation) {
   navigator.geolocation.watchPosition(watchPos, showError);
 } else {
@@ -43,43 +38,7 @@ function showError(error) {
   }
 }
 /*
-// Create the script tag, set the appropriate attributes
-var script = document.createElement("script");
-script.src =
-  "https://maps.googleapis.com/maps/api/js?key=" +
-  googleMapApiKey +
-  "&callback=initMap";
-script.defer = true;
-script.async = true;
 
-// Attach your callback function to the `window` object
-window.initMap = function () {
-  // JS API is loaded and available
-};
-
-// Append the 'script' element to 'head'
-document.head.appendChild(script);
-*/
-
-// let getPosition = function () {
-//   return new Promise((resolve, reject) => {
-//     navigator.geolocation.watchPosition(resolve, reject);
-//   });
-// };
-
-// async function getData() {
-//   const data = await getPosition();
-//   const pos = { lat: data.coords.latitude, lng: data.coords.longitude };
-
-//   $("#geo").html(`
-//   <p>Latitude: <span>${pos.lat}</span> °</p><br />
-//   <p>Longitude: <span>${pos.lng}</span> °</p>
-//   `);
-// }
-
-// getData();
-
-/*
 GoogleMap
 */
 let map;
