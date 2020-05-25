@@ -30,6 +30,10 @@ header {
   justify-content: start;
 }
 
+span {
+  font-weight: bold;
+}
+
 .highlighted {
   color: red;
 }
